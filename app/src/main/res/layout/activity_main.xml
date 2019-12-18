@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textColor="#4a4a4a"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/coesa_application_forms"
+        android:layout_marginBottom="30dp"
+         />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_item"
+        >
+        <ImageView
+            android:src="@drawable/ek"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/ab" />
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/president"
+                android:textColor="#4a4a4a"
+                android:textSize="18sp" />
+            <TextView
+                android:text="@string/only_for_third_year_student"
+                android:textSize="14sp"
+                android:textColor="#bebebe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/primaryitem"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_item"
+        >
+        <ImageView
+            android:src="@drawable/don"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/def"
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secretary"
+                android:textColor="#4a4a4a"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONLY FOR SECOND YEAR STUDENT"
+                android:textColor="#bebebe"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_item"
+        >
+        <ImageView
+            android:src="@drawable/tin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="HEAD OF PANEL"
+                android:textSize="18sp"
+                android:textColor="#4a4a4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="ONLY FOR FIRST YEAR STUDENT"
+                android:textSize="14sp"
+                android:textColor="#bebebe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="18dp"
+        android:background="#D81B60"
+        android:text="APPLY"
+        android:textColor="#FFFFFEFE"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#FF9E9999"
+        android:text="cancel"
+        android:textColor="#FFFFFEFE"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</LinearLayout>
+

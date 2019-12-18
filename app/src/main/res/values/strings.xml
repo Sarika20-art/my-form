@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">COESA</string>
+    <string name="coesa_application_forms">COESA APPLICATION FORMS</string>
+    <string name="ab">TODO</string>
+    <string name="president">PRESIDENT</string>
+    <string name="only_for_third_year_student">ONLY FOR THIRD YEAR STUDENT</string>
+    <string name="def">TODO</string>
+    <string name="secretary">SECRETARY</string>
+</resources>
