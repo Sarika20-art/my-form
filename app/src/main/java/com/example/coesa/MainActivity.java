@@ -25,9 +25,18 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         primaryitem=(LinearLayout)findViewById(R.id.primaryitem);
         btn_apply=(Button)findViewById(R.id.btn_apply);
         btn_cancel=(Button)findViewById(R.id.btn_cancel);
+
+        btn_apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               openActivity();
+            }
+        });
+
 
         fade= AnimationUtils.loadAnimation(this,R.anim.fade);
 
@@ -36,8 +45,10 @@ public class MainActivity extends AppCompatActivity  {
         btn_apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,president.class));
+                startActivity(new Intent(MainActivity.this, president.class));
             }
+
+
         });
 
 
@@ -69,4 +80,10 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+
+public void openActivity()
+{
+    Intent intent=new Intent(this,president.class);
+    startActivity(intent);
+}
 }
