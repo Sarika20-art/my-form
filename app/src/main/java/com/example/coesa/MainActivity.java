@@ -3,6 +3,7 @@ package com.example.coesa;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +25,6 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         primaryitem=(LinearLayout)findViewById(R.id.primaryitem);
         btn_apply=(Button)findViewById(R.id.btn_apply);
         btn_cancel=(Button)findViewById(R.id.btn_cancel);
@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity  {
 
         btn_apply.setAlpha(0);
         btn_cancel.setAlpha(0);
+        btn_apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,president.class));
+            }
+        });
 
 
         primaryitem.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +65,6 @@ public class MainActivity extends AppCompatActivity  {
             }
 
         });
-
 
 
 
