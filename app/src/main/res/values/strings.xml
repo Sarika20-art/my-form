@@ -6,4 +6,11 @@
     <string name="only_for_third_year_student">ONLY FOR THIRD YEAR STUDENT</string>
     <string name="def">TODO</string>
     <string name="secretary">SECRETARY</string>
+    <string-array name="Post">
+        <item>President</item>
+        <item>Secretary</item>
+        <item>Woman Empowerment Head</item>
+        <item>Technical Head</item>
+        <item>Head Of Panel</item>
+    </string-array>
 </resources>

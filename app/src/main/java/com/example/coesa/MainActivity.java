@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     LinearLayout primaryitem;
     Button btn_apply,btn_cancel;
@@ -55,7 +57,11 @@ public class MainActivity extends AppCompatActivity {
                 btn_apply.setAlpha(0);
                 btn_cancel.setAlpha(0);
             }
+
         });
+
+
+
 
     }
 }
