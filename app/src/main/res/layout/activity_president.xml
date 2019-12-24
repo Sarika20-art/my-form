@@ -1,110 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".president">
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:id="@+id/textView"
+        android:layout_width="396dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:text="APPLICATION FORM"
-        android:textSize="30dp"
         android:textAlignment="center"
-        />
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        android:textColor="#FF0A0A0A"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:layout_width="338dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:background="#ffffff"
-        android:hint="Enter Your Full Name" />
+        android:id="@+id/editText"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:hint="Enrollment No."
+        android:textSize="19dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <EditText
-        android:layout_width="338dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:background="#ffffff"
-        android:hint="Enter Your Enrollment No. " />
-
-    <EditText
-        android:layout_width="338dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:background="#ffffff"
-        android:hint="Last Semester Percentage" />
-
-    <TextView
-        android:layout_width="337dp"
-        android:layout_height="38dp"
-        android:text="Was in previous COESA comittee or not ?"
-        android:textSize="17dp"
-        android:layout_marginTop="14dp"/>
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:hint="Full Name"
+        android:textSize="19dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="155dp" />
 
     <RadioGroup
-
-        android:layout_width="388dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp">
+        android:id="@+id/group"
+        android:layout_width="379dp"
+        android:layout_height="107dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="225dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="34dp"
+            android:text="Do you have any experience:"
+            android:textSize="19dp"/>
+        <RadioButton
+            android:onClick="rbclick"
+            android:id="@+id/rbYes"
+            android:layout_width="120dp"
+            android:layout_height="34dp"
+            android:text="YES"
+            android:textSize="19dp"></RadioButton>
 
         <RadioButton
-            android:id="@+id/radio_yes"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:onClick="checkButton"
-            android:text="Yes"
-            android:checked="true"/>
-
-        <RadioButton
-            android:id="@+id/radio_no"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:onClick="checkButton"
-            android:layout_marginLeft="4dp"
-            android:text="No"/>
+            android:onClick="rbclick"
+            android:id="@+id/rbNo"
+            android:layout_width="120dp"
+            android:layout_height="34dp"
+            android:text="NO"
+            android:textSize="19dp"></RadioButton>
     </RadioGroup>
-    <Button
-        android:id="@+id/Experience"
-        android:text="EXPERIENCE"
-        android:textSize="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"/>
-    <TextView
-        android:id="@+id/text_view_selected"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="20sp"
-        android:text="Do you have experience:"
-        />
-
-    <TextView
-        android:layout_width="388dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="14dp"
-        android:text="If Yes then Select the post:"
-        android:textSize="17dp"/>
 
     <Spinner
-        android:id="@+id/spinner11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="14dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="14dp"
-        android:hint="Write about ur qualities that you think makes t=you deserving forthis post" />
+        android:id="@+id/spinner22"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="346dp"
+        tools:ignore="InvalidId,MissingConstraints"/>
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:text="Submit"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:text="START QUESTIONS"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="450dp"
+        tools:ignore="MissingConstraints"
+        android:textSize="19dp"
+        android:textColor="#FFFCF8F8"
+        android:background="#D81B60"></Button>
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

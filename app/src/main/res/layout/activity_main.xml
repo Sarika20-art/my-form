@@ -17,6 +17,7 @@
         android:layout_marginBottom="30dp"
          />
     <LinearLayout
+        android:id="@+id/primaryitem"
         android:orientation="horizontal"
         android:layout_marginBottom="24dp"
         android:layout_width="match_parent"
@@ -53,7 +54,7 @@
         </LinearLayout>
 </LinearLayout>
     <LinearLayout
-        android:id="@+id/primaryitem"
+        android:id="@+id/secondaryitem"
         android:orientation="horizontal"
         android:layout_marginBottom="24dp"
         android:layout_width="match_parent"
@@ -91,6 +92,7 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/thirditem"
         android:orientation="horizontal"
         android:layout_marginBottom="24dp"
         android:layout_width="match_parent"

@@ -7,10 +7,10 @@
     <string name="def">TODO</string>
     <string name="secretary">SECRETARY</string>
     <string-array name="Post">
-        <item>President</item>
-        <item>Secretary</item>
-        <item>Woman Empowerment Head</item>
-        <item>Technical Head</item>
-        <item>Head Of Panel</item>
+        <item>Last Year Post:President</item>
+        <item>Last Year Post:Secretary</item>
+        <item>Last Year Post:Technical Head</item>
+        <item>Last Year Post:Head Of Panel</item>
+        <item>Last Year Post: - </item>
     </string-array>
 </resources>
