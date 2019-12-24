@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PresidentForm">
+
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="QUESTIONARIES"
+        android:textAlignment="center"
+        android:textColor="#FF0C0C0C"
+        android:textStyle="bold"
+
+        android:textSize="23dp" />
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="What Qualitities do you think suitable for President?"
+        android:textSize="19dp" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="What are the basic responibilities of a president according to you?"
+        android:textSize="19dp" />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="What will you do for college,students as a president?"
+        android:textSize="19dp" />
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="What kind of interaction will be there between students, president,teachers and other COESA members?"
+        android:textSize="19dp" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="What kind of behaviour will you prefer with other comittee members and others students?"
+        android:textSize="19dp" />
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine" />
+</LinearLayout>

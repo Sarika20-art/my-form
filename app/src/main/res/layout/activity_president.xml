@@ -29,10 +29,11 @@
         android:hint="Enrollment No."
         android:textSize="19dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="85dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="83dp" />
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="379dp"
         android:layout_height="52dp"
         android:hint="Full Name"
@@ -79,15 +80,16 @@
         tools:ignore="InvalidId,MissingConstraints"/>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="218dp"
         android:layout_height="51dp"
+        android:background="#D81B60"
         android:text="START QUESTIONS"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="450dp"
-        tools:ignore="MissingConstraints"
-        android:textSize="19dp"
         android:textColor="#FFFCF8F8"
-        android:background="#D81B60"></Button>
+        android:textSize="19dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="450dp"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
