@@ -16,7 +16,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity  {
 
-    private LinearLayout primaryitem,secondaryitem,thirditem;
+    private LinearLayout primaryitem,secondaryitem,thirditem,fouritem,fiveitem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity  {
         primaryitem=(LinearLayout)findViewById(R.id.primaryitem);
         secondaryitem = (LinearLayout) findViewById(R.id.secondaryitem);
         thirditem=(LinearLayout)findViewById(R.id.thirditem);
+        fouritem=(LinearLayout) findViewById(R.id.fouritem);
+        fiveitem=(LinearLayout) findViewById(R.id.fiveitem);
 
         primaryitem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +47,18 @@ public class MainActivity extends AppCompatActivity  {
                 hopque();
             }
         });
+        fouritem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                thque();
+            }
+        });
+        fiveitem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                emque();
+            }
+        });
 
     }
 
@@ -61,6 +75,16 @@ public class MainActivity extends AppCompatActivity  {
     public void hopque()
     {
         Intent intent=new Intent(this,HeadOfPanel.class);
+        startActivity(intent);
+    }
+    public void thque()
+    {
+        Intent intent=new Intent(this,TechnicalHead.class);
+        startActivity(intent);
+    }
+    public void emque()
+    {
+        Intent intent=new Intent(this,EventManager.class);
         startActivity(intent);
     }
 
