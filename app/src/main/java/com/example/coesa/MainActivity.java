@@ -16,10 +16,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity  {
 
-    LinearLayout primaryitem,secondaryitem,thirditem;
-    Button btn_apply,btn_cancel;
-    Animation fade;
-
+    private LinearLayout primaryitem,secondaryitem,thirditem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,114 +27,41 @@ public class MainActivity extends AppCompatActivity  {
         secondaryitem = (LinearLayout) findViewById(R.id.secondaryitem);
         thirditem=(LinearLayout)findViewById(R.id.thirditem);
 
-
-        btn_apply=(Button)findViewById(R.id.btn_apply);
-        btn_cancel=(Button)findViewById(R.id.btn_cancel);
-
-        btn_apply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               openActivity();
-            }
-        });
-
-
-        fade= AnimationUtils.loadAnimation(this,R.anim.fade);
-
-        btn_apply.setAlpha(0);
-        btn_cancel.setAlpha(0);
-        btn_apply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, president.class));
-            }
-
-
-        });
-
-
         primaryitem.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-            @Override
-            public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    primaryitem.setBackground(getDrawable(R.drawable.bg_item_selected));
-                    btn_apply.setAlpha(1);
-                    btn_cancel.setAlpha(1);
-                    btn_apply.startAnimation(fade);
-                }
-            }
-        });
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(View view) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    primaryitem.setBackground(getDrawable(R.drawable.bg_item));
-                }
-                btn_apply.setAlpha(0);
-                btn_cancel.setAlpha(0);
+                preque();
             }
-
         });
-
         secondaryitem.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-            @Override
-            public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    secondaryitem.setBackground(getDrawable(R.drawable.bg_item_selected));
-                    btn_apply.setAlpha(1);
-                    btn_cancel.setAlpha(1);
-                    btn_apply.startAnimation(fade);
-                }
-            }
-        });
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(View view) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    secondaryitem.setBackground(getDrawable(R.drawable.bg_item));
-                }
-                btn_apply.setAlpha(0);
-                btn_cancel.setAlpha(0);
+                seque();
             }
-
         });
-
         thirditem.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-            @Override
-            public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    thirditem.setBackground(getDrawable(R.drawable.bg_item_selected));
-                    btn_apply.setAlpha(1);
-                    btn_cancel.setAlpha(1);
-                    btn_apply.startAnimation(fade);
-                }
-            }
-        });
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(View view) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    thirditem.setBackground(getDrawable(R.drawable.bg_item));
-                }
-                btn_apply.setAlpha(0);
-                btn_cancel.setAlpha(0);
+                hopque();
             }
-
         });
-
-
 
     }
 
-public void openActivity()
-{
-    Intent intent=new Intent(this,president.class);
-    startActivity(intent);
-}
+    public void preque()
+    {
+        Intent intent=new Intent(this,PresidentForm.class);
+        startActivity(intent);
+    }
+    public void seque()
+    {
+        Intent intent=new Intent(this,SecretaryForm.class);
+        startActivity(intent);
+    }
+    public void hopque()
+    {
+        Intent intent=new Intent(this,HeadOfPanel.class);
+        startActivity(intent);
+    }
+
 }

@@ -2,7 +2,6 @@ package com.example.coesa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,30 +10,17 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class president extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class SecretaryForm extends AppCompatActivity  implements AdapterView.OnItemSelectedListener {
     private Button button;
     RadioGroup rg;
     RadioButton rb;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_president);
-
-        button=(Button)findViewById(R.id.button_que);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openActivity3();
-            }
-        });
-
-
-
+        setContentView(R.layout.activity_secretary_form);
+        button=(Button)findViewById(R.id.sub1);
         rg=(RadioGroup)findViewById(R.id.group);
 
         Spinner spinner = findViewById(R.id.spinner22);
@@ -60,8 +46,5 @@ public class president extends AppCompatActivity implements AdapterView.OnItemSe
         rb=(RadioButton)findViewById(radiobuttonid);
         Toast.makeText(getBaseContext(),rb.getText(),Toast.LENGTH_LONG).show();}
 
-    public void  openActivity3(){
-        Intent intent=new Intent(this,PresidentForm.class);
-        startActivity(intent);
-    }
+
 }

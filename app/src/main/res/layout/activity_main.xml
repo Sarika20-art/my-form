@@ -26,7 +26,7 @@
         android:layout_marginLeft="32dp"
         android:padding="12dp"
         android:background="@drawable/bg_item"
-        >
+       >
         <ImageView
             android:src="@drawable/ek"
             android:layout_width="60dp"
@@ -126,30 +126,6 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/btn_apply"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="18dp"
-        android:background="#D81B60"
-        android:text="APPLY"
-        android:textColor="#FFFFFEFE"
-        android:textSize="25dp"
-        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_cancel"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:background="#FF9E9999"
-        android:text="cancel"
-        android:textColor="#FFFFFEFE"
-        android:textSize="25dp"
-        android:textStyle="bold" />
 </LinearLayout>
 

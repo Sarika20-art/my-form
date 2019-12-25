@@ -2,7 +2,6 @@ package com.example.coesa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,14 +12,14 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class PresidentForm extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class HeadOfPanel extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Button button;
     RadioGroup rg;
     RadioButton rb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_president_form);
+        setContentView(R.layout.activity_head_of_panel);
 
         button=(Button)findViewById(R.id.sub1);
         rg=(RadioGroup)findViewById(R.id.group);
@@ -49,5 +48,4 @@ public class PresidentForm extends AppCompatActivity implements AdapterView.OnIt
         Toast.makeText(getBaseContext(),rb.getText(),Toast.LENGTH_LONG).show();}
 
 
-    }
-
+}
